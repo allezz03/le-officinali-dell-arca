@@ -23,7 +23,7 @@ function renderCart(){
     const row=document.createElement("div");
     row.className="cart-page-row";
     row.innerHTML=`
-      <div class="cart-product-art"><img src="${p.image}" alt="${p.name}" loading="lazy"></div>
+      <div class="cart-product-art"><img class="cart-product-image" src="${p.image}" alt="${p.name}" loading="lazy"></div>
       <div class="cart-product-info">
         <span class="category">${p.category.toUpperCase()}</span>
         <h3>${p.name}</h3>

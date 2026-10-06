@@ -19,7 +19,7 @@ function render(){
   const [t,s] = descriptions[category] || descriptions.Tutti;
   title.textContent=t; subtitle.textContent=s;
   const items = category==='Tutti' ? window.PRODUCTS : window.PRODUCTS.filter(p=>p.category===category);
-  grid.innerHTML = items.map(p=>`<article class="product-card"><div class="visual"><img src="${p.image}" alt="${p.name}" loading="lazy"></div><div class="product-info"><div class="category">${p.category.toUpperCase()}</div><div class="product-name">${p.name}</div><div class="desc">${p.desc}</div><div class="rating"><span>★★★★★ &nbsp; ${p.reviews} recensioni</span><b class="price">${money(p.price)}</b></div><button class="add" data-id="${p.id}">Aggiungi al carrello +</button></div></article>`).join('');
+  grid.innerHTML = items.map(p=>`<article class="product-card"><div class="visual"><img class="product-image" src="${p.image}" alt="${p.name}" loading="lazy"></div><div class="product-info"><div class="category">${p.category.toUpperCase()}</div><div class="product-name">${p.name}</div><div class="desc">${p.desc}</div><div class="rating"><span>★★★★★ &nbsp; ${p.reviews} recensioni</span><b class="price">${money(p.price)}</b></div><button class="add" data-id="${p.id}">Aggiungi al carrello +</button></div></article>`).join('');
   grid.querySelectorAll('.add').forEach(btn=>btn.addEventListener('click',()=>add(Number(btn.dataset.id))));
 }
 updateCount(); render();
