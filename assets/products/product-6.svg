@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<defs><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#26372B" flood-opacity=".16"/></filter></defs>
+<path d="M55 410 C95 350 72 286 126 254 C170 228 191 174 174 118" fill="none" stroke="#9EB39D" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+<path d="M83 366 C58 332 55 296 79 274 C112 292 126 322 119 350" fill="#E8D9D0" opacity=".42"/>
+<path d="M406 402 C380 344 409 307 384 267 C363 232 334 205 347 158" fill="none" stroke="#9EB39D" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+<path d="M382 325 C417 305 431 279 416 252 C387 257 369 281 370 306" fill="#E8D9D0" opacity=".34"/>
+<g filter="url(#shadow)"><rect x="155" y="118" width="190" height="52" rx="15" fill="#365C42"/><rect x="168" y="155" width="164" height="206" rx="32" fill="#D5DCC7"/><rect x="180" y="210" width="140" height="98" rx="12" fill="#FFFDFC"/><text x="250" y="235" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#365C42" font-weight="bold">LE OFFICINALI</text><text x="250" y="254" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#365C42">dell'Arca</text><text x="250" y="281" text-anchor="middle" font-family="Arial" font-size="14" fill="#26372B" font-weight="700">CREMA VISO</text><text x="250" y="299" text-anchor="middle" font-family="Arial" font-size="9" fill="#778078">50 ML</text></g></svg>

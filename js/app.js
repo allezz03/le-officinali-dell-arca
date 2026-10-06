@@ -13,7 +13,7 @@ function renderProducts(items=window.PRODUCTS){
     const card=document.createElement("article");
     card.className="product-card";
     card.innerHTML=`
-      <div class="visual"><div class="mini-art"></div></div>
+      <div class="visual"><img src="${p.image}" alt="${p.name}" loading="lazy"></div>
       <div class="product-info">
         <div class="category">${p.category.toUpperCase()}</div>
         <div class="product-name">${p.name}</div>
