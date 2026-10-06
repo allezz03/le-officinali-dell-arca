@@ -13,3 +13,119 @@
 .cart-product-image{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply;}
 .cart-product-art{overflow:hidden;}
 @media(max-width:600px){.product-card .visual{height:180px;}}
+
+
+/* ===== MENU MOBILE ===== */
+.mobile-menu-btn{
+  display:none;
+  width:42px;
+  height:42px;
+  border:0;
+  background:transparent;
+  border-radius:10px;
+  padding:8px;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:4px;
+  flex-shrink:0;
+}
+.mobile-menu-btn span{
+  display:block;
+  width:21px;
+  height:2px;
+  border-radius:2px;
+  background:#365C42;
+  transition:transform .2s ease,opacity .2s ease;
+}
+.mobile-menu-btn.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.mobile-menu-btn.open span:nth-child(2){opacity:0}
+.mobile-menu-btn.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+.mobile-nav{
+  display:none;
+  position:absolute;
+  left:10px;
+  right:10px;
+  top:78px;
+  background:#FFFDFC;
+  border:1px solid #DDDCD3;
+  border-radius:16px;
+  padding:8px;
+  box-shadow:0 14px 35px #26372b20;
+  z-index:50;
+}
+.mobile-nav a{
+  display:block;
+  padding:13px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  color:#26372B;
+  font-size:14px;
+  font-weight:600;
+}
+.mobile-nav a:hover,
+.mobile-nav a:focus{
+  background:#F0F2E8;
+  color:#365C42;
+}
+.mobile-nav.open{display:block}
+
+@media(max-width:1100px){
+  .header{
+    position:sticky;
+    top:0;
+    padding:5px 14px;
+    height:78px;
+    gap:8px;
+  }
+  .header nav{display:none}
+  .mobile-menu-btn{display:inline-flex}
+  .header-actions{
+    margin-left:auto;
+    gap:4px;
+  }
+  .header-actions .icon-btn{display:none}
+  .brand{
+    min-width:0;
+    width:94px;
+    height:68px;
+  }
+  .brand img{
+    width:90px;
+    height:66px;
+  }
+  .mobile-nav{
+    top:74px;
+  }
+}
+
+@media(max-width:650px){
+  .header{
+    padding:5px 10px;
+  }
+  .brand{
+    width:86px;
+    height:68px;
+  }
+  .brand img{
+    width:82px;
+    height:64px;
+  }
+  .mobile-menu-btn{
+    width:40px;
+    height:40px;
+  }
+  .header-actions .cart-btn{
+    width:42px;
+    height:42px;
+  }
+  .mobile-nav{
+    left:8px;
+    right:8px;
+    top:73px;
+  }
+}
+
+.mobile-nav a.active{background:#F0F2E8;color:#365C42;font-weight:700}
