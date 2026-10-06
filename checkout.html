@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | Le Officinali dell'Arca</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+<header class="header">
+  <a class="brand" href="index.html"><span>LE OFFICINALI<br>DELL'ARCA</span></a>
+  <nav>
+    <a href="index.html">Home</a><a href="index.html#prodotti">Prodotti</a>
+    <a href="index.html#categorie">Integratori</a><a href="index.html#categorie">Cosmetici</a>
+    <a href="index.html#categorie">Tisane</a><a href="index.html#chi-siamo">Chi siamo</a>
+  </nav>
+  <div class="header-actions"><a class="cart-btn" href="cart.html">🛒 <span id="cartCount">0</span></a></div>
+</header>
+<div class="announcement">SPEDIZIONE GRATUITA SOPRA 49 € &nbsp;·&nbsp; PAGAMENTO SICURO</div>
+
+<main class="page-content">
+  <div class="page-title">
+    <span class="eyebrow">ULTIMO PASSAGGIO</span>
+    <h1>Checkout</h1>
+    <p>Inserisci i dati di spedizione. Questa versione è una demo: nessun pagamento reale verrà effettuato.</p>
+  </div>
+
+  <div class="checkout-layout">
+    <form id="checkoutForm" class="checkout-card">
+      <div class="form-section">
+        <h2>Dati personali</h2>
+        <div class="form-grid">
+          <label>Nome<input required name="name" type="text" placeholder="Mario"></label>
+          <label>Cognome<input required name="surname" type="text" placeholder="Rossi"></label>
+          <label class="wide">Email<input required name="email" type="email" placeholder="mario@email.it"></label>
+          <label class="wide">Telefono<input required name="phone" type="tel" placeholder="+39 333 1234567"></label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Indirizzo di spedizione</h2>
+        <div class="form-grid">
+          <label class="wide">Indirizzo<input required name="address" type="text" placeholder="Via Roma 10"></label>
+          <label>CAP<input required name="zip" type="text" inputmode="numeric" placeholder="42121"></label>
+          <label>Città<input required name="city" type="text" placeholder="Reggio Emilia"></label>
+          <label>Provincia<input required name="province" type="text" maxlength="2" placeholder="RE"></label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Pagamento</h2>
+        <div class="payment-demo">
+          <span>💳</span><div><strong>Pagamento online</strong><p>In una versione reale qui potremo collegare Stripe, PayPal o un altro sistema di pagamento.</p></div>
+        </div>
+      </div>
+
+      <label class="checkbox-label"><input required type="checkbox"> Accetto i termini e le condizioni di acquisto.</label>
+      <button class="primary full checkout-submit" type="submit">Conferma ordine demo</button>
+      <a class="continue-shopping" href="cart.html">← Torna al carrello</a>
+    </form>
+
+    <aside class="summary-card">
+      <h2>Il tuo ordine</h2>
+      <div id="checkoutItems"></div>
+      <div class="summary-line"><span>Subtotale</span><strong id="subtotal">€ 0.00</strong></div>
+      <div class="summary-line"><span>Spedizione</span><strong id="shipping">€ 4.90</strong></div>
+      <div class="summary-total"><span>Totale</span><strong id="checkoutTotal">€ 0.00</strong></div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand"><h3>LE OFFICINALI<br>DELL'ARCA</h3><span>Erboristeria · Cosmetica · Benessere</span><p>La natura, nel tuo quotidiano.</p></div>
+    <div><h4>CATEGORIE</h4><a href="index.html#prodotti">Integratori</a><a href="index.html#prodotti">Cosmetici</a><a href="index.html#prodotti">Tisane</a><a href="index.html#prodotti">Tutti i prodotti</a></div>
+    <div><h4>ASSISTENZA</h4><a>Contatti</a><a>Spedizioni e consegne</a><a>Resi e rimborsi</a><a>Domande frequenti</a></div>
+    <div><h4>CONTATTI</h4><p>✉ info@leofficinalidellarca.it</p><p>☎ +39 0522 000000</p><p>⌖ Reggio Emilia, Italia</p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Le Officinali dell'Arca · Tutti i diritti riservati</span><span>Privacy · Cookie · Termini e condizioni</span></div>
+</footer>
+<script src="js/products.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
